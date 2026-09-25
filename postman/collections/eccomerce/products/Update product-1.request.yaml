@@ -1,0 +1,16 @@
+$kind: http-request
+name: Update product
+method: PUT
+url: http://127.0.0.1:8000/api/products/1/
+order: 3000
+headers:
+  Content-Type: application/json
+body:
+  type: json
+  content: |-
+    {
+      "name": "Wireless Mouse Pro",
+      "description": "Updated ergonomic wireless mouse",
+      "price": "39.99",
+      "stock": 40
+    }
